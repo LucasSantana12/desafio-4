@@ -71,9 +71,9 @@ export default function App() {
 
           <TouchableOpacity
             style={styles.button}
-            onPress={() => handleLikeRepository(repository.id)}
+            onPress={() => handleLikeRepository(`like-button-${repository.id}`)}
             // Remember to replace "1" below with repository ID: {`like-button-${repository.id}`}
-            testID={repository.id}
+            testID={`like-button-${repository.id}`}
           >
             <Text style={styles.buttonText}>Curtir</Text>
           </TouchableOpacity>
@@ -141,3 +141,4 @@ const styles = StyleSheet.create({
     padding: 15,
   },
 });
+
