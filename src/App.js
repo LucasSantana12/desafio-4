@@ -71,7 +71,7 @@ export default function App() {
 
           <TouchableOpacity
             style={styles.button}
-            onPress={() => handleLikeRepository(`like-button-${repository.id}`)}
+            onPress={() => handleLikeRepository(repository.id)}
             // Remember to replace "1" below with repository ID: {`like-button-${repository.id}`}
             testID={`like-button-${repository.id}`}
           >
@@ -141,4 +141,3 @@ const styles = StyleSheet.create({
     padding: 15,
   },
 });
-
